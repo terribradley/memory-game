@@ -3,10 +3,12 @@
   flex-wrap: wrap;
   width: 912px;
   height: 1200px; }
-  .memory-container .card {
+  .memory-container .card-back {
+    background-color: blue;
     border: 2px solid red;
     width: 300px; }
-    .memory-container .card img {
+    .memory-container .card-back img {
+      display: none;
       width: 300px;
       height: 300px; }
 

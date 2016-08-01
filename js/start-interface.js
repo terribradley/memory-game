@@ -4,7 +4,11 @@ $(document).ready(function(){
     var cards_array = ["1", "1", "2", "2", "3", "3", "4", "4", "5", "5", "6", "6"];
     cards_array = shuffle(cards_array);
     for (i=0; i < cards_array.length; i++){
-      $(".memory-container").append("<div class=card><img src='img/" + cards_array[i] + ".png'></div>");
+      $(".memory-container").append("<div class='card-back'><img class='card-front'src='img/" + cards_array[i] + ".png'></div>");
     }
+  });
+  $('.card-back').click(function(){
+    alert('clicked card front')
+    $('.card-front').show();
   });
 });
